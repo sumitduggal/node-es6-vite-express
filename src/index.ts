@@ -1,3 +1,14 @@
-import { homedir } from "os";
+import { log } from "console";
+import express from "express";
+import type { Request, Response } from "express";
 
-console.log("Hello CodeSandbox", homedir());
+const PORT = process.env.PORT || 3000;
+const app = express();
+
+app.get("/", (req: Request, res: Response) => {
+  res.send("Hellow world");
+});
+
+app.listen(PORT, () => {
+  console.log(`Listening on http://localhost:${PORT}`);
+});
