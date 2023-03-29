@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "dev": "tsx watch src/index.ts",
+    "build": "tsx src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,8 @@
   "keywords": [],
   "author": "Sumit duggal",
   "devDependencies": {
+    "@types/node": "^18.15.11",
+    "tsx": "^3.12.6",
     "typescript": "^5.0.2"
-  },
-  "dependencies": {}
+  }
 }
