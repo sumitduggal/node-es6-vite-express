@@ -1,4 +1,3 @@
-import { log } from "console";
 import express from "express";
 import type { Request, Response } from "express";
 import { DEFAULT_PORT } from "src/utils/constants";
